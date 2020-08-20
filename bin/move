@@ -8,10 +8,12 @@ puts "Where would you like to go?"
 
 puts "Please enter 1-9:"
 
+puts display_board(board)
+
 user_input = gets.strip
 
 index = input_to_index(user_input)
 
-move(board, input_to_index(user_input))
+move(board,index)
 
 display_board(board)
